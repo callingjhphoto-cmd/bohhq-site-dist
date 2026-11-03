@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cookies · Back of House</title>
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/img/clay/stub.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/tokens.css">
+<link rel="stylesheet" href="assets/page.css">
+<link rel="stylesheet" href="assets/legal.css">
+</head>
+<body>
+<main class="legal" id="main">
+<a class="back" href="index.html">← Back of House</a>
+<p class="draft">DRAFT FOR SOLICITOR REVIEW — not legal advice.</p>
+<h1 id="cookie-notice">Cookie notice</h1>
+<p><em>Back of House Drinks Ltd · for bohhq.io and the Back of House app · Draft 1.1, 2 November 2026.</em></p>
+<p>A cookie is a small file a website saves in your browser. "Local storage" is a similar store in your browser. The law treats both the same way. A site needs your consent to store or read them, <strong>unless</strong> they are strictly necessary for a service you asked for, or fall within another exception the law sets out.</p>
+<p>The law: the Privacy and Electronic Communications Regulations 2003, regulation 6 (https://www.legislation.gov.uk/uksi/2003/2426/regulation/6) and Schedule A1 (https://www.legislation.gov.uk/uksi/2003/2426/schedule/A1), as changed by the Data (Use and Access) Act 2025 from 5 February 2026. "Strictly necessary" is Schedule A1, paragraph 4. The law's own examples include "automatically authenticating the identity of the subscriber or user".</p>
+<h2 id="the-website-bohhq.io">The website, bohhq.io</h2>
+<p><strong>No cookies. No local storage. No analytics. No advertising or tracking. No third-party scripts or fonts.</strong></p>
+<ul>
+<li>The site loads only its own pages, style sheets, scripts and fonts. Nothing is fetched from anyone else.</li>
+<li>Its scripts do not use cookies, local storage or session storage.</li>
+<li>The "Request a demo" button opens a form on demo.bohhq.io. That page is part of the app (below), and it is open without signing in.</li>
+</ul>
+<p>The company that hosts the website logs your IP address for security purposes. That is not a cookie. Our privacy notice explains it.</p>
+<h2 id="the-app-demo.bohhq.io-and-each-venues-workspace">The app (demo.bohhq.io and each venue's workspace)</h2>
+<h3 id="cookies">Cookies</h3>
+<p>All of them are strictly necessary: without them you cannot stay signed in or see the right venue. None is used for tracking, analytics or advertising. None is shared with anyone.</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Name</th>
+<th>What it does</th>
+<th>What it holds</th>
+<th>How long</th>
+<th>Settings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>boh_access</code></td>
+<td>Keeps you signed in at the front door of the app</td>
+<td>A random token. The server keeps only a scrambled (hashed) copy.</td>
+<td>Ends when you sign out, after 30 minutes without use, or when your session ends: 12 hours at most for the owner. A demo login's session ends no later than the login itself.</td>
+<td>HttpOnly, Secure, SameSite=Lax</td>
+</tr>
+<tr>
+<td><code>boh_person</code></td>
+<td>Knows which person you are inside the venue's workspace, so you see only what your role allows</td>
+<td>A random token pointing to your session on the server; never your name or role</td>
+<td>Ends at sign-out, or after 12 hours at most; on the public demo, at the next demo reset</td>
+<td>HttpOnly, Secure, SameSite=Strict</td>
+</tr>
+<tr>
+<td><code>boh_venue</code></td>
+<td>Remembers which venue (or which site of a group) you are looking at</td>
+<td>The venue's short code</td>
+<td>Until you close the browser</td>
+<td>HttpOnly, Secure, SameSite=Strict</td>
+</tr>
+</tbody>
+</table>
+<p>A fourth cookie, <code>boh_hq</code>, exists only on Back of House's own console. That runs on the director's own computer and cannot be reached from the internet. The public app does not set it.</p>
+<h3 id="local-storage-and-session-storage">Local storage and session storage</h3>
+<p>These hold <strong>your display preferences only</strong>. No personal data and no venue data.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Name</th>
+<th>What it remembers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>boh-theme</code></td>
+<td>Light or dark look</td>
+</tr>
+<tr>
+<td><code>boh-tone</code></td>
+<td>Day or night look on the command screen</td>
+</tr>
+<tr>
+<td><code>boh-working</code></td>
+<td>Whether "show the working" under figures is on</td>
+</tr>
+<tr>
+<td><code>boh-floor-night</code></td>
+<td>Day or night view of the floor plan</td>
+</tr>
+<tr>
+<td><code>boh_legacy_nav</code></td>
+<td>Whether you chose the older navigation</td>
+</tr>
+<tr>
+<td><code>boh.pwa.hint</code></td>
+<td>That you dismissed the "add to home screen" hint (for good, or for this visit)</td>
+</tr>
+<tr>
+<td><code>boh-reauth</code> (this visit only)</td>
+<td>The time the app last reloaded after your sign-in expired, so it does not reload in a loop</td>
+</tr>
+</tbody>
+</table>
+<h3 id="offline-copy-of-the-apps-pages">Offline copy of the app's pages</h3>
+<p>If you add the app to your phone's home screen, your browser keeps a copy of the app's own pages, styles, scripts, fonts and icons, so it opens quickly. It never keeps venue data, sign-in pages, files or anything from the data side of the app.</p>
+<h2 id="do-we-need-a-consent-banner">Do we need a consent banner?</h2>
+<p><strong>Not while everything above stays true.</strong> Everything is either strictly necessary or a display setting you chose. We review this whenever we change the website or the app.</p>
+<p><strong>If we ever add analytics, or anything else that is not strictly necessary</strong>, we will switch on a consent banner first:</p>
+<ul>
+<li>Nothing optional runs until you choose.</li>
+<li>Two equal buttons, "Accept" and "Reject". No boxes ticked for you.</li>
+<li>A link to this notice, listing each optional cookie, its purpose, who sets it and how long it lasts.</li>
+<li>A "Cookie settings" link in every footer, so you can change your mind at any time.</li>
+</ul>
+<h2 id="contact">Contact</h2>
+<p>hello@bohhq.io. Our privacy notice explains your rights.</p>
+<p><em>Last updated: 2 November 2026 (draft).</em></p>
+</main>
+<footer class="foot"><div class="wrap">
+<p>Back of House is a trading name of Back of House Drinks Ltd, a company registered in England and Wales, number 14482942. Registered office: Flat 8 Stepney City Apartments, 49 Clark Street, London E1 3HS. Contact: <a href="mailto:hello@bohhq.io">hello@bohhq.io</a>.</p>
+<p class="foot-links"><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a> · <a href="security.html">Security</a></p>
+</div></footer>
+</body>
+</html>
